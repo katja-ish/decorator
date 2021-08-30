@@ -1,7 +1,6 @@
 import H2Regular from "../../../atoms/typography/H2/Regular/Index";
 import styles from "./Footer.module.css";
 import Image from "next/image";
-import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,9 +10,8 @@ const Footer = () => {
           <div className={[styles.itemContainer, styles.place].join(" ")}>
             <h3 className={styles.subtitle}>Москва</h3>
             <div className={styles.item}>
-              <H2Regular
-                text={"Филипповский переулок, 11 стр. 1 Метро Арбатская"}
-              />
+              <H2Regular text={"Филипповский переулок, 11 стр. 1"} />
+              <H2Regular text={"Метро Арбатская"} />
             </div>
           </div>
 
@@ -45,7 +43,10 @@ const Footer = () => {
           <div className={styles.itemContainer}>
             <div className={styles.socials}>
               <div className={styles.icon}>
-                <a href="https://instagram.com/" target="_blank">
+                <a
+                  href="https://www.instagram.com/decorator_n/"
+                  target="_blank"
+                >
                   <Image
                     src={"/icons/instagram.svg"}
                     layout={"fill"}
@@ -73,16 +74,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={styles.map}>
-        <iframe
-          width="600"
-          height="450"
-          style="border:0"
-          loading="lazy"
-          allowfullscreen
-          src="https://www.google.com/maps/embed/v1/place?Space+Needle,Seattle+WA"
-        ></iframe>
-      </div>
+      <div className={styles.map}></div>
     </div>
   );
 };

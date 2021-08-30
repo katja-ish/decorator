@@ -6,7 +6,7 @@
   border-bottom: 1px solid var(--black);
   width: 100%;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 }
 
 .container:first-child {
@@ -56,5 +56,23 @@
   content: " ";
   border-radius: 50%;
   margin-right: calc(var(--dPx) * 12);
-  transition: all 0.25s ease;
+  /* transition: width 0.15s ease, height 0.15s ease; */
+}
+
+.container:hover .link {
+  align-items: center;
+}
+
+.container:hover .link span {
+  width: fit-content;
+  font-size: calc(var(--dPx) * 18);
+  line-height: 100%;
+  border-radius: calc(var(--dPx) * 32);
+  border: calc(var(--dPx) * 1) solid var(--white);
+  padding: calc(var(--dPx) * 6) calc(var(--dPx) * 8);
+}
+
+.container:hover .link::before {
+  width: calc(var(--dPx) * 30);
+  height: calc(var(--dPx) * 30);
 }

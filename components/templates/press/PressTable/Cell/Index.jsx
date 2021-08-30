@@ -9,7 +9,9 @@ const Cell = () => {
         <H1Regular text={"Номинация"} />
       </div>
       <div className={styles.column}>
-        <p className={styles.link}>Ссылка на публикацию</p>
+        <p className={styles.link}>
+          <span>Ссылка на публикацию</span>
+        </p>
         <H1Regular
           text={
             "Квартира в Доме Гельриха: винтаж, молдинги и оранжевые кресла в проекте Нателы Манкаевой"
