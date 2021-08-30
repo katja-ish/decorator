@@ -1,0 +1,43 @@
+.container {
+  padding: calc(var(--dPx) * 20) calc(var(--dPx) * 32) calc(var(--dPx) * 0);
+  background: var(--white);
+  position: fixed;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border {
+  margin-top: calc(var(--dPx) * 20);
+  height: 1px;
+  width: 100%;
+  background: var(--black);
+}
+
+.item {
+  cursor: pointer;
+  color: var(--black);
+  transition: opacity 0.3s ease;
+}
+
+.item:hover {
+  opacity: 0.56;
+}
+
+.active {
+  display: flex;
+  align-items: baseline;
+}
+
+.active::before {
+  width: calc(var(--dPx) * 12);
+  height: calc(var(--dPx) * 12);
+  border: 1px solid var(--black);
+  content: " ";
+  border-radius: 50%;
+  background: var(--yellow);
+  margin-right: calc(var(--dPx) * 8);
+}

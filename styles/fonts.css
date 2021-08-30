@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "HelveticaNeueLTStd-LtIt";
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url("/fonts/HelveticaNeueLTStdLtIt.woff.woff2") format("woff2"),
+    url("/fonts/HelveticaNeueLTStdLtIt.woff.woff") format("woff");
+}

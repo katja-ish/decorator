@@ -1,0 +1,60 @@
+.container {
+  padding-top: calc(var(--dPx) * 15);
+  padding-bottom: calc(var(--dPx) * 17);
+  color: var(--black);
+  display: flex;
+  border-bottom: 1px solid var(--black);
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.container:first-child {
+  padding-top: calc(var(--dPx) * 12);
+}
+
+.container:hover {
+  background: var(--black);
+  color: var(--white);
+  padding-left: calc(var(--dPx) * 16);
+  padding-top: calc(var(--dPx) * 20);
+}
+
+.container:hover .link::before {
+  border: calc(var(--dPx) * 1) solid var(--white);
+}
+
+.column:first-child {
+  width: calc(var(--dPx) * 336);
+  margin-right: calc(var(--dPx) * 20);
+}
+
+.column:nth-child(2) {
+  width: calc(var(--dPx) * 800);
+  margin-right: calc(var(--dPx) * 32);
+}
+
+.date,
+.link,
+.place {
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(var(--dPx) * 14);
+  line-height: 112%;
+  margin-bottom: calc(var(--dPx) * 14);
+}
+
+.link {
+  display: flex;
+  align-items: baseline;
+}
+
+.link::before {
+  width: calc(var(--dPx) * 8);
+  height: calc(var(--dPx) * 8);
+  border: calc(var(--dPx) * 1) solid var(--black);
+  content: " ";
+  border-radius: 50%;
+  margin-right: calc(var(--dPx) * 12);
+  transition: all 0.25s ease;
+}

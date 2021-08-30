@@ -1,0 +1,20 @@
+.container {
+  padding: calc(var(--dPx) * 620) calc(var(--dPx) * 16) calc(var(--dPx) * 72);
+  color: var(--black);
+}
+
+.header {
+  display: flex;
+  padding-bottom: calc(var(--dPx) * 12);
+  border-bottom: 1px solid var(--black);
+}
+
+.column:first-child {
+  width: calc(var(--dPx) * 336);
+  margin-right: calc(var(--dPx) * 20);
+}
+
+.column:nth-child(2) {
+  width: calc(var(--dPx) * 800);
+  margin-right: calc(var(--dPx) * 32);
+}

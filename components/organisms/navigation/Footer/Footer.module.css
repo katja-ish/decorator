@@ -1,0 +1,80 @@
+.container {
+  height: calc(var(--dPx) * 568);
+  display: flex;
+}
+
+.info {
+  background: var(--blue);
+  width: calc(var(--dPx) * 853);
+  color: var(--white);
+  padding: calc(var(--dPx) * 52) calc(var(--dPx) * 32) calc(var(--dPx) * 72)
+    calc(var(--dPx) * 82);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.map {
+  width: calc(var(--dPx) * 587);
+  background: var(--white);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.row:nth-child(2) {
+  width: calc(var(--dPx) * 272);
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(var(--dPx) * 22);
+  line-height: 135%;
+  letter-spacing: -0.018em;
+  margin-bottom: calc(var(--dPx) * 7);
+  transition: opacity 0.4s ease;
+}
+
+.place .subtitle,
+.time .subtitle {
+  margin-bottom: calc(var(--dPx) * 14);
+}
+
+.itemContainer {
+  margin-bottom: calc(var(--dPx) * 104);
+}
+
+.item {
+  max-width: calc(var(--dPx) * 312);
+  transition: opacity 0.4s ease;
+}
+
+.socials {
+  display: flex;
+  height: calc(var(--dPx) * 65);
+  align-items: center;
+}
+
+.icon {
+  width: calc(var(--dPx) * 48);
+  height: calc(var(--dPx) * 48);
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.iconSvg {
+  position: absolute;
+  object-fit: cover;
+}
+
+.icon:first-child {
+  margin-right: calc(var(--dPx) * 30);
+}
+
+.icon:hover {
+  opacity: 0.56;
+}
