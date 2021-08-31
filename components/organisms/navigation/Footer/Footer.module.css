@@ -97,6 +97,11 @@
   margin-right: calc(var(--dPx) * 30);
 }
 
-.icon:hover {
+.subtitle a {
+  transition: opacity 0.4s ease;
+}
+
+.icon:hover,
+.subtitle a:hover {
   opacity: 0.56;
 }

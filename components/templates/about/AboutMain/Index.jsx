@@ -63,9 +63,20 @@ const AboutMain = () => {
         </div>
       </section>
 
-      <section className={styles.section}>
+      <section className={[styles.section, styles.philosophy].join(" ")}>
         <div className={styles.title}>Философия</div>
         <div className={styles.content}>
+          <div className={[styles.image, styles.threeCol].join(" ")}>
+            <Image
+              src={"/images/philosophy_01.png"}
+              layout={"fill"}
+              objectFit="contain"
+              className={styles.imageSrc}
+              priority
+              quality={100}
+            />
+          </div>
+
           <div className={styles.paragraph}>
             Идеальный Дом – это, когда переступая порог, чувствуешь, что он
             существует вместе с тобой, а не сам по себе. Идеальный Дом должен
@@ -127,6 +138,28 @@ const AboutMain = () => {
       <section className={[styles.section, styles.partners].join(" ")}>
         <div className={styles.title}>Партнеры</div>
 
+        <div className={[styles.image, styles.threeCol].join(" ")}>
+          <Image
+            src={"/images/partners_01.png"}
+            layout={"fill"}
+            objectFit="contain"
+            className={styles.imageSrc}
+            priority
+            quality={100}
+          />
+        </div>
+
+        <div className={[styles.image, styles.twoCol].join(" ")}>
+          <Image
+            src={"/images/partners_02.png"}
+            layout={"fill"}
+            objectFit="contain"
+            className={styles.imageSrc}
+            priority
+            quality={100}
+          />
+        </div>
+
         <div className={styles.content}>
           <div className={styles.paragraphBig}>MURADOV/LINDE</div>
           <div className={styles.paragraph}>
@@ -176,7 +209,7 @@ const AboutMain = () => {
                 rel="noreferrer"
               >
                 <Image
-                  src={"/icons/instagram-grey.svg"}
+                  src={"/icons/instagram-black.svg"}
                   layout={"fill"}
                   className={styles.iconSvg}
                 />
@@ -185,7 +218,7 @@ const AboutMain = () => {
             <div className={styles.icon}>
               <a href="https://facebook.com/">
                 <Image
-                  src={"/icons/facebook-grey.svg"}
+                  src={"/icons/facebook-black.svg"}
                   layout={"fill"}
                   className={styles.iconSvg}
                 />

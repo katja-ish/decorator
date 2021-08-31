@@ -77,6 +77,10 @@
   margin-top: calc(var(--dPx) * 40);
 }
 
+.partners {
+  height: calc(var(--dPx) * 587);
+}
+
 .partners .paragraphBig {
   margin-bottom: calc(var(--dPx) * 48);
 }
@@ -101,6 +105,7 @@
   height: calc(var(--dPx) * 60);
   position: relative;
   cursor: pointer;
+  opacity: 0.56;
   transition: opacity 0.4s ease;
 }
 
@@ -114,7 +119,7 @@
 }
 
 .icon:hover {
-  opacity: 0.56;
+  opacity: 1;
 }
 
 .image {
@@ -147,7 +152,7 @@
 
 .imageSrc {
   position: absolute;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, filter 0.7s ease-in-out;
   filter: grayscale();
 }
 
@@ -180,7 +185,7 @@
 
 .decorator .image:first-child {
   height: calc(var(--dPx) * 312);
-  left: calc(var(--dPx) * 148);
+  left: calc(var(--dPx) * 116);
   top: calc(var(--dPx) * 112);
 }
 
@@ -195,12 +200,25 @@
 }
 
 .decoratorImages .image:first-child::after,
-.decoratorImages .image:nth-child(2)::after {
+.decoratorImages .image:nth-child(2)::after,
+.philosophy .image::after,
+.partners .image::after {
   content: "Фотография: Сергей Ананьев";
 }
 
-.decoratorImages .image:first-child::before {
+.decoratorImages .image:first-child::before,
+.partners .twoCol::before {
   background: rgba(251, 236, 150, 0.87);
+}
+
+.decoratorImages .image:nth-child(2)::before,
+.partners .threeCol::before {
+  background: rgba(169, 203, 255, 0.87);
+}
+
+.philosophy .image::before,
+.decorator .image::before {
+  background: #f2f1ef;
 }
 
 .decoratorImages .image:nth-child(2) {
@@ -209,6 +227,20 @@
   top: calc(var(--dPx) * 0);
 }
 
-.decoratorImages .image:nth-child(2)::before {
-  background: rgba(169, 203, 255, 0.87);
+.philosophy .image {
+  height: calc(var(--dPx) * 420);
+  left: calc(var(--dPx) * 116);
+  top: calc(var(--dPx) * 240);
+}
+
+.partners .threeCol {
+  height: calc(var(--dPx) * 420);
+  left: calc(var(--dPx) * 116);
+  top: calc(var(--dPx) * 140);
+}
+
+.partners .twoCol {
+  height: calc(var(--dPx) * 268);
+  left: calc(var(--dPx) * 940);
+  top: calc(var(--dPx) * 278);
 }
