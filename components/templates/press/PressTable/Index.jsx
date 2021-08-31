@@ -20,7 +20,6 @@ const PressTable = () => {
         <Cell />
         <Cell />
         <Cell />
-        <Cell />
       </div>
     </div>
   );

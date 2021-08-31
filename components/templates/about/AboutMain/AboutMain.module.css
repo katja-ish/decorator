@@ -1,0 +1,214 @@
+.container {
+  min-height: 1000px;
+  color: var(--black);
+  padding: calc(var(--dPx) * 148) calc(var(--dPx) * 32) calc(var(--dPx) * 172);
+}
+
+.title {
+  font-size: calc(var(--dPx) * 26);
+  line-height: 100%;
+  letter-spacing: -0.024em;
+}
+
+.paragraph {
+  font-size: calc(var(--dPx) * 18);
+  line-height: calc(var(--dPx) * 28);
+  letter-spacing: -0.006em;
+  width: calc(var(--dPx) * 554);
+  position: relative;
+  left: calc(var(--dPx) * 117);
+}
+
+.decorator .paragraph {
+  padding-top: calc(var(--dPx) * 48);
+}
+
+.quote {
+  font-size: calc(var(--dPx) * 22);
+  line-height: calc(var(--dPx) * 32);
+  letter-spacing: -0.018em;
+  width: calc(var(--dPx) * 789);
+  margin: calc(var(--dPx) * 42) 0;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: calc(var(--dPx) * 114) 0;
+  position: relative;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: calc(var(--dPx) * 789);
+}
+
+.paragraphBig,
+.li {
+  font-size: calc(var(--dPx) * 26);
+  line-height: calc(var(--dPx) * 32);
+  letter-spacing: -0.024em;
+  width: calc(var(--dPx) * 554);
+}
+
+.li {
+  margin-bottom: calc(var(--dPx) * 32);
+  display: flex;
+  align-items: center;
+}
+
+.li::before {
+  content: " ";
+  width: calc(var(--dPx) * 8);
+  height: calc(var(--dPx) * 8);
+  border: calc(var(--dPx) * 1) solid var(--black);
+  border-radius: 50%;
+  margin-right: calc(var(--dPx) * 16);
+}
+
+.list {
+  margin-top: calc(var(--dPx) * 40);
+}
+
+.partners .paragraphBig {
+  margin-bottom: calc(var(--dPx) * 48);
+}
+
+.mail {
+  opacity: 0.56;
+  transition: opacity 0.3s ease;
+}
+
+.mail:hover {
+  opacity: 1;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  margin-top: calc(var(--dPx) * 66);
+}
+
+.icon {
+  width: calc(var(--dPx) * 60);
+  height: calc(var(--dPx) * 60);
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.iconSvg {
+  position: absolute;
+  object-fit: cover;
+}
+
+.icon:first-child {
+  margin-right: calc(var(--dPx) * 56);
+}
+
+.icon:hover {
+  opacity: 0.56;
+}
+
+.image {
+  object-fit: cover;
+  position: absolute;
+}
+
+.image::after {
+  font-size: calc(var(--dPx) * 14);
+  line-height: 112%;
+  letter-spacing: 0.006em;
+  color: rgba(46, 46, 46, 0.38);
+  position: absolute;
+  bottom: calc(var(--dPx) * -24);
+  left: 0;
+  /* transform: rotate(-90deg); */
+}
+
+.twoCol {
+  width: calc(var(--dPx) * 202);
+}
+
+.threeCol {
+  width: calc(var(--dPx) * 320);
+}
+
+.fiveCol {
+  width: calc(var(--dPx) * 550);
+}
+
+.imageSrc {
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+  filter: grayscale();
+}
+
+.image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  mix-blend-mode: multiply;
+  z-index: 11;
+}
+
+.image:hover .imageSrc {
+  filter: none;
+  transform: scale(1.05);
+}
+
+.image:hover::before {
+  background: transparent;
+  opacity: 0;
+}
+
+.decoratorImages {
+  height: calc(var(--dPx) * 704);
+}
+
+.decorator .image:first-child {
+  height: calc(var(--dPx) * 312);
+  left: calc(var(--dPx) * 148);
+  top: calc(var(--dPx) * 112);
+}
+
+.decorator .image:first-child::after {
+  content: "Натела Манкаева, декоратор";
+}
+
+.decoratorImages .image:first-child {
+  height: calc(var(--dPx) * 420);
+  left: calc(var(--dPx) * 0);
+  top: calc(var(--dPx) * 0);
+}
+
+.decoratorImages .image:first-child::after,
+.decoratorImages .image:nth-child(2)::after {
+  content: "Фотография: Сергей Ананьев";
+}
+
+.decoratorImages .image:first-child::before {
+  background: rgba(251, 236, 150, 0.87);
+}
+
+.decoratorImages .image:nth-child(2) {
+  height: calc(var(--dPx) * 698);
+  left: calc(var(--dPx) * 704);
+  top: calc(var(--dPx) * 0);
+}
+
+.decoratorImages .image:nth-child(2)::before {
+  background: rgba(169, 203, 255, 0.87);
+}

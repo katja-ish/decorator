@@ -74,7 +74,16 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={styles.map}></div>
+      <div className={styles.map}>
+        <Image
+          src={"/images/map.png"}
+          layout={"fill"}
+          className={styles.mapImage}
+          objectFit={"cover"}
+          quality={100}
+          priority
+        />
+      </div>
     </div>
   );
 };
