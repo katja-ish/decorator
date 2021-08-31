@@ -170,7 +170,11 @@ const AboutMain = () => {
 
           <div className={styles.socials}>
             <div className={styles.icon}>
-              <a href="https://www.instagram.com/decorator_n/" target="_blank">
+              <a
+                href="https://www.instagram.com/decorator_n/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   src={"/icons/instagram-grey.svg"}
                   layout={"fill"}

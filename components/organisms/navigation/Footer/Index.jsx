@@ -46,6 +46,7 @@ const Footer = () => {
                 <a
                   href="https://www.instagram.com/decorator_n/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Image
                     src={"/icons/instagram.svg"}
