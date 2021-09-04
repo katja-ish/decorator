@@ -18,10 +18,19 @@
   background: var(--black);
 }
 
+.right {
+  display: flex;
+}
+
 .item {
   cursor: pointer;
   color: var(--black);
+  margin-right: calc(var(--dPx) * 36);
   transition: opacity 0.3s ease;
+}
+
+.item:last-child {
+  margin-right: 0;
 }
 
 .item:hover {
