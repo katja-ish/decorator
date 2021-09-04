@@ -15,6 +15,7 @@ const AboutMain = () => {
               className={styles.imageSrc}
               priority
               quality={100}
+              alt={""}
             />
           </div>
 
@@ -48,6 +49,7 @@ const AboutMain = () => {
             className={styles.imageSrc}
             priority
             quality={100}
+            alt={""}
           />
         </div>
 
@@ -59,6 +61,7 @@ const AboutMain = () => {
             className={styles.imageSrc}
             priority
             quality={100}
+            alt={""}
           />
         </div>
       </section>
@@ -74,6 +77,7 @@ const AboutMain = () => {
               className={styles.imageSrc}
               priority
               quality={100}
+              alt={""}
             />
           </div>
 
@@ -146,6 +150,7 @@ const AboutMain = () => {
             className={styles.imageSrc}
             priority
             quality={100}
+            alt={""}
           />
         </div>
 
@@ -157,6 +162,7 @@ const AboutMain = () => {
             className={styles.imageSrc}
             priority
             quality={100}
+            alt={""}
           />
         </div>
 
@@ -212,6 +218,7 @@ const AboutMain = () => {
                   src={"/icons/instagram-black.svg"}
                   layout={"fill"}
                   className={styles.iconSvg}
+                  alt={""}
                 />
               </a>
             </div>
@@ -221,6 +228,7 @@ const AboutMain = () => {
                   src={"/icons/facebook-black.svg"}
                   layout={"fill"}
                   className={styles.iconSvg}
+                  alt={""}
                 />
               </a>
             </div>

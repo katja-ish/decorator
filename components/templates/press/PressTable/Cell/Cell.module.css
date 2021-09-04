@@ -6,7 +6,9 @@
   border-bottom: 1px solid var(--black);
   width: 100%;
   cursor: pointer;
-  /* transition: all 0.3s ease-in-out; */
+  min-height: calc(var(--dPx) * 84);
+  transition: padding-left 0.2s ease, padding-top 0.2s ease,
+    background 0.2s ease-in-out, color 0.3s ease-in-out;
 }
 
 .container:first-child {
@@ -56,7 +58,7 @@
   content: " ";
   border-radius: 50%;
   margin-right: calc(var(--dPx) * 12);
-  /* transition: width 0.15s ease, height 0.15s ease; */
+  transition: width 0.2s ease, height 0.2s ease;
 }
 
 .container:hover .link {
@@ -75,4 +77,18 @@
 .container:hover .link::before {
   width: calc(var(--dPx) * 30);
   height: calc(var(--dPx) * 30);
+}
+
+.h1 {
+  font-family: "HelveticaNeueLTStd-LtIt", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(var(--dPx) * 22);
+  line-height: calc(var(--dPx) * 28);
+  letter-spacing: -0.018em;
+}
+
+.container:hover .h1 {
+  font-size: calc(var(--dPx) * 26);
+  line-height: calc(var(--dPx) * 26);
 }

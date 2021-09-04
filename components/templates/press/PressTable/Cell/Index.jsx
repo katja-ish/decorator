@@ -6,21 +6,20 @@ const Cell = () => {
     <div className={styles.container}>
       <div className={styles.column}>
         <p className={styles.date}>2020</p>
-        <H1Regular text={"Номинация"} />
+        <h1 className={styles.h1}>Номинация</h1>
       </div>
       <div className={styles.column}>
         <p className={styles.link}>
           <span>Ссылка на публикацию</span>
         </p>
-        <H1Regular
-          text={
-            "Квартира в Доме Гельриха: винтаж, молдинги и оранжевые кресла в проекте Нателы Манкаевой"
-          }
-        />
+        <h1 className={styles.h1}>
+          Квартира в Доме Гельриха: винтаж, молдинги и оранжевые кресла в
+          проекте Нателы Манкаевой
+        </h1>
       </div>
       <div className={styles.column}>
         <p className={styles.place}>Россия</p>
-        <H1Regular text={"DesignChat"} />
+        <h1 className={styles.h1}>DesignChat</h1>
       </div>
     </div>
   );
