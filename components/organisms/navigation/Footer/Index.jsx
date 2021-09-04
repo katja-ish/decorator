@@ -68,11 +68,7 @@ const Footer = () => {
           </div>
 
           <div className={styles.itemContainer}>
-            <a
-              href="http://muradov-linde.ru/"
-              target="_blank"
-              rel="noopener noreferer"
-            >
+            <a href="http://muradov-linde.ru/" target="_blank" rel="noreferrer">
               <h3 className={styles.subtitle}>MURADOV/LINDE</h3>
             </a>
             <div className={styles.item}>
