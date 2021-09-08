@@ -52,6 +52,8 @@
 .place .subtitle::before {
   content: url("/icons/pin.svg");
   position: absolute;
+  height: calc(var(--dPx) * 14);
+  width: calc(var(--dPx) * 22);
   left: calc(var(--dPx) * -32);
   top: calc(var(--dPx) * 2);
 }
@@ -59,7 +61,7 @@
 .time .subtitle::before {
   content: url("/icons/time.svg");
   position: absolute;
-  left: calc(var(--dPx) * -36);
+  left: calc(var(--dPx) * -40);
   top: calc(var(--dPx) * 2);
   height: calc(var(--dPx) * 22);
   width: calc(var(--dPx) * 22);

@@ -1,5 +1,4 @@
 import styles from "./Cell.module.css";
-import H1Regular from "../../../../atoms/typography/H1/Regular/Index";
 
 const Cell = () => {
   return (
